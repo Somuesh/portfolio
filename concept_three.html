@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed":"#ffdea5","outline-variant":"#4e4637","secondary-container":"#5d4604","on-tertiary":"#412d00","surface-container-highest":"#353436","surface-container-lowest":"#0e0e0f","on-secondary-container":"#d5b46b","on-primary-container":"#4f3900","surface-container-low":"#1c1b1c","surface-variant":"#353436","on-tertiary-container":"#503800","error-container":"#93000a","primary-fixed":"#ffdf9e","on-secondary":"#3f2e00","primary-container":"#c9a24b","on-background":"#e5e2e3","on-error":"#690005","inverse-surface":"#e5e2e3","surface":"#131314","on-tertiary-fixed-variant":"#5c4204","tertiary":"#e8c179","tertiary-container":"#c6a25d","surface-container":"#201f20","outline":"#9a8f7e","secondary":"#e4c277","surface-container-high":"#2a2a2b","surface-tint":"#ebc166","inverse-primary":"#795902","secondary-fixed":"#ffdf9b","inverse-on-surface":"#313031","tertiary-fixed-dim":"#e8c179","surface-bright":"#3a393a","on-primary":"#402d00","on-error-container":"#ffdad6","primary-fixed-dim":"#ebc166","on-secondary-fixed":"#251a00","primary":"#ebc166","on-secondary-fixed-variant":"#5a4302","on-surface":"#e5e2e3","on-tertiary-fixed":"#261900","on-primary-fixed":"#261a00","error":"#ffb4ab","surface-dim":"#131314","on-surface-variant":"#d1c5b2","secondary-fixed-dim":"#e4c277","background":"#131314","on-primary-fixed-variant":"#5b4300"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"1.5rem","space-xl":"2.5rem","space-lg":"1.5rem","margin-mobile":"1.25rem","space-md":"1rem","gutter-mobile":"1rem","space-xs":"0.25rem","space-sm":"0.5rem","margin":"3rem"},"fontFamily":{"display-md-mobile":["Playfair Display"],"title-md":["Inter"],"headline-sm":["Playfair Display"],"body-md":["Inter"],"label-lg":["Inter"],"display-md":["Playfair Display"],"label-md":["Inter"],"display-lg":["Playfair Display"],"display-lg-mobile":["Playfair Display"],"label-sm":["Inter"],"title-lg":["Inter"],"headline-md":["Playfair Display"],"body-lg":["Inter"],"headline-lg":["Playfair Display"]},"fontSize":{"display-md-mobile":["28px",{"lineHeight":"36px","letterSpacing":"0em","fontWeight":"400"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"label-lg":["13px",{"lineHeight":"18px","letterSpacing":"0.08em","fontWeight":"600"}],"display-md":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-md":["11px",{"lineHeight":"16px","letterSpacing":"0.12em","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"400"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.14em","fontWeight":"500"}],"title-lg":["18px",{"lineHeight":"26px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"0.01em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"0em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary relative min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/85 backdrop-blur-xl border-b border-primary/20 shadow-[0_4px_30px_rgba(0,0,0,0.5)]"><div class="h-20 w-full px-gutter lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="Marathe Motion Pictures Emblem Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XdA6qh_ru9Dt9m1JJJat0RtUYgBfK0v4v-xt6hv-oy1It-SREYoWzgaSmVbrANmdUDMBU8p5N_qBzJYlFSiayOFNPWEDs0cxKMFIEND1rjvjcoCU9j63r2iH0lCxW1gYVH6G2u-0qvhX_1ks4cTAU1JLsAcpiFxZxEErH8BfnDEU4M1H_O3gvy-5NN7ZE0mLZln-s0Al813q-LuD0iispdHvsb0FnYW1QLGwKVHm1ylcfL5bAFmHTH6onj"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wide text-primary leading-none">Marathe</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-outline mt-1">Est. 1974 • Fifty Years</span></div></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold border-b border-primary pb-1"><a aria-current="page" class="uppercase tracking-wider transition-colors text-primary font-semibold border-b border-primary pb-1" data-path="films" href="#">Films</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="legacy-fifty-years" href="#">Legacy &amp; 50 Years</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="dhananjay" href="#">Dhananjay</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="director" href="#">Director</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="showreel" href="#">Showreel</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="press" href="#">Press</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden sm:inline-flex items-center gap-space-xs px-space-sm py-1 border border-primary/40 bg-surface-container-high rounded-full shadow-[0_0_15px_rgba(201,162,75,0.1)]"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Teaser Premiering Nov 2026</span></div><button class="p-2 text-on-surface-variant hover:text-primary transition-colors rounded-full hover:bg-surface-container-high flex items-center justify-center" title="Toggle Atmospheric Sound" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full relative selection:bg-primary-container selection:text-on-primary">
+<!-- TOP HERO: IMMERSIVE 2.39:1 CINEMATIC WIDESCREEN LETTERBOX -->
+<section class="relative w-full -mt-20 overflow-hidden bg-surface-container-lowest">
+<!-- Cinematic Aspect Framing Container -->
+<div class="relative w-full min-h-[92vh] lg:min-h-screen flex items-center justify-center pt-24 pb-16 px-gutter lg:px-margin">
+<!-- Background Image with Ken Burns drift & Projector Beam Radial Wash -->
+<div class="absolute inset-0 z-0">
+<img alt="Dhananjay Cinema Epic Canvas" class="w-full h-full object-cover object-center scale-105 motion-safe:animate-[pulse_10s_ease-in-out_infinite] opacity-60 brightness-90 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUoTv4wMp-FcG_I8kFZBBlbUArNG3tmizCW9JBd4ek9ndfZe0toWTAiHF_M1kZGuLFNwQpZ4yKQF6Ac7OhAFIiLQdxizEeWTaqd_XesKa253bcZ4Yz46hlK5wy8GzctSV362uTiWQyZETv-bb5yMsfp448szpBGQmcgoKRSX6yRiayNSWbhMJCFKEQwdpNhhIrgi2axxynxzsm-vzf6Ed1Lob9TO93ixEkq4ys3IG2We9syQmCBsijsQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/65 to-surface-container-lowest/80"></div>
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(235,193,102,0.18)_0%,_transparent_65%)]"></div>
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_40%,_rgba(11,11,12,0.85)_100%)]"></div>
+</div>
+<!-- Anamorphic Hairline Letterbox Accents -->
+<div class="absolute top-20 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+<!-- Hero Visual Core Content -->
+<div class="relative z-10 max-w-5xl mx-auto flex flex-col items-center text-center">
+<!-- Archival Laurel Milestone -->
+<div class="inline-flex items-center gap-space-sm px-space-md py-1 rounded-full bg-surface-container-high/80 backdrop-blur-md shadow-[0_4px_24px_rgba(201,162,75,0.15)] mb-space-md">
+<span class="material-symbols-outlined text-primary text-[16px]">workspace_premium</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">50 Years of Cinematic Heritage • 1974–2024</span>
+<span class="material-symbols-outlined text-primary text-[16px]">workspace_premium</span>
+</div>
+<!-- Film Tagline -->
+<p class="font-label-lg text-label-lg uppercase tracking-[0.25em] text-on-surface-variant max-w-xl mx-auto mb-space-sm">
+          A New Era Dawns on Indian Celluloid
+        </p>
+<!-- Monumental Title -->
+<h1 class="font-display-lg text-display-lg lg:text-[76px] lg:leading-[84px] text-primary uppercase tracking-tight drop-shadow-[0_4px_30px_rgba(235,193,102,0.3)] mb-space-xs font-serif">
+          Dhananjay
+        </h1>
+<div class="flex items-center justify-center gap-space-md mb-space-sm">
+<span class="h-px w-12 bg-gradient-to-r from-transparent to-primary"></span>
+<span class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest font-serif">The Heir</span>
+<span class="h-px w-12 bg-gradient-to-l from-transparent to-primary"></span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl font-serif italic mb-space-lg">
+          "A visionary magnum opus of dynasty, bloodline, and valour by Aryan Marathe."
+        </p>
+<!-- Technical Laurels & Screen Specification Pills -->
+<div class="flex flex-wrap items-center justify-center gap-space-sm mb-space-xl">
+<span class="px-space-sm py-1 rounded-sm bg-surface-container text-tertiary font-label-sm text-label-sm tracking-widest uppercase">Diwali Nov 27, 2026</span>
+<span class="px-space-sm py-1 rounded-sm bg-surface-container text-tertiary font-label-sm text-label-sm tracking-widest uppercase">Shot on ARRI Alexa 65</span>
+<span class="px-space-sm py-1 rounded-sm bg-surface-container text-tertiary font-label-sm text-label-sm tracking-widest uppercase">IMAX &amp; Dolby Atmos 70mm</span>
+<span class="px-space-sm py-1 rounded-sm bg-surface-container text-tertiary font-label-sm text-label-sm tracking-widest uppercase">Worldwide Release: 5 Languages</span>
+</div>
+<!-- Action Callouts -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md w-full sm:w-auto">
+<button class="w-full sm:w-auto px-space-xl py-space-sm bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider rounded-lg shadow-[0_8px_30px_rgba(201,162,75,0.35)] hover:bg-tertiary transition-all duration-300 flex items-center justify-center gap-space-sm group" id="openTeaserModalBtn" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-125" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Watch Official Teaser (01:48)</span>
+</button>
+<a class="w-full sm:w-auto px-space-lg py-space-sm bg-surface-container-high/90 text-on-surface hover:text-primary font-label-lg text-label-lg uppercase tracking-wider rounded-lg backdrop-blur hover:bg-surface-container transition-all flex items-center justify-center gap-space-xs" href="#legacySection">
+<span>The 50-Year Odyssey</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+</div>
+<!-- Atmospheric Audio Indicator Pill -->
+<div class="mt-space-xl inline-flex items-center gap-space-sm px-space-md py-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">
+            Original Score: Pandit Hariprasad &amp; AR Rahman • Mastering: Abbey Road
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: ARCHIVAL COUNTDOWN TIMER -->
+<section class="w-full bg-surface-container-lowest py-space-xl px-gutter lg:px-margin relative">
+<div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<!-- Release Announcement Context -->
+<div class="flex flex-col gap-space-xs text-center lg:text-left max-w-md">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary">Worldwide Theatrical Premiere</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-serif">Diwali 2026 Cinematic Countdown</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Simultaneous premiere across 4,500+ screens worldwide in Hindi, Marathi, Tamil, Telugu, and English IMAX prints.
+        </p>
+</div>
+<!-- Live Monolithic Digits Counter Grid -->
+<div class="grid grid-cols-4 gap-space-sm sm:gap-space-md" id="premiereCountdown">
+<!-- Days -->
+<div class="flex flex-col items-center justify-center bg-surface-container-high p-space-md rounded-lg shadow-[0_12px_30px_-10px_rgba(201,162,75,0.12)] min-w-[72px] sm:min-w-[100px]">
+<span class="font-display-md text-display-md text-primary font-serif leading-none font-bold" id="countdownDays">612</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline mt-1">Days</span>
+</div>
+<!-- Hours -->
+<div class="flex flex-col items-center justify-center bg-surface-container-high p-space-md rounded-lg shadow-[0_12px_30px_-10px_rgba(201,162,75,0.12)] min-w-[72px] sm:min-w-[100px]">
+<span class="font-display-md text-display-md text-primary font-serif leading-none font-bold" id="countdownHours">14</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline mt-1">Hours</span>
+</div>
+<!-- Mins -->
+<div class="flex flex-col items-center justify-center bg-surface-container-high p-space-md rounded-lg shadow-[0_12px_30px_-10px_rgba(201,162,75,0.12)] min-w-[72px] sm:min-w-[100px]">
+<span class="font-display-md text-display-md text-primary font-serif leading-none font-bold" id="countdownMins">42</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline mt-1">Mins</span>
+</div>
+<!-- Secs -->
+<div class="flex flex-col items-center justify-center bg-surface-container-high p-space-md rounded-lg shadow-[0_12px_30px_-10px_rgba(201,162,75,0.12)] min-w-[72px] sm:min-w-[100px]">
+<span class="font-display-md text-display-md text-secondary font-serif leading-none font-bold" id="countdownSecs">18</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline mt-1">Secs</span>
+</div>
+</div>
+<!-- Action: Calendar Reminder -->
+<div class="flex flex-col sm:flex-row gap-space-xs shrink-0">
+<button class="px-space-md py-space-sm bg-surface-container-highest hover:bg-surface-container text-on-surface font-label-md text-label-md uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-space-xs" id="calendarBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">event_available</span>
+<span id="calendarStatusText">Sync to Calendar</span>
+</button>
+</div>
+</div>
+</section>
+<!-- SECTION 3: 50-YEAR LEGACY & ARCHIVAL SPLIT -->
+<section class="w-full py-28 px-gutter lg:px-margin bg-surface relative overflow-hidden" id="legacySection">
+<!-- Subtle project-beam background gradient -->
+<div class="absolute -top-40 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Section Tag & Title -->
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-px bg-primary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary">Golden Jubilee Retrospective</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-serif">
+          1974 – 2024: Fifty Years of Celluloid Excellence
+        </h2>
+</div>
+<!-- Split Layout: Story & Statistics Left, Layered Archival Posters Right -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left: Studio Genesis Story & Metric Cards -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Founded in the nascent cinematic boom of 1974 by Dadasaheb Phalke laureate 
+            <strong class="text-on-surface font-medium">Anand Rao Marathe</strong>, Marathe Motion Pictures established the gold standard for dramatic storytelling in Indian cinema. Over five continuous decades, the studio championed bold auteur voices, transition from 35mm black-and-white realism to sweeping anamorphic historicals.
+          </p>
+<p class="font-body-md text-body-md text-outline leading-relaxed">
+            With 68 landmark features, 14 National Film Awards, and 7 Cannes selections, our archives safeguard original master reels, hand-painted vintage lobby cards, and the architectural history of Indian screenwriting.
+          </p>
+<!-- 4-Stat Bento Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md pt-space-sm">
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs shadow-md">
+<span class="font-display-md text-display-md text-primary font-serif">50</span>
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Golden Years</span>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs shadow-md">
+<span class="font-display-md text-display-md text-primary font-serif">68</span>
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Features Produced</span>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs shadow-md">
+<span class="font-display-md text-display-md text-primary font-serif">14</span>
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">National Awards</span>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs shadow-md">
+<span class="font-display-md text-display-md text-primary font-serif">3</span>
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Generations</span>
+</div>
+</div>
+<!-- Archival Link -->
+<div class="pt-space-sm">
+<a class="inline-flex items-center gap-space-sm text-primary hover:text-tertiary transition-colors font-label-lg text-label-lg uppercase tracking-widest group" href="#filmographySection">
+<span>Inspect Preserved 35mm Celluloid Catalog</span>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Right: Layered Archival Posters Collage -->
+<div class="lg:col-span-5 relative flex items-center justify-center min-h-[460px]">
+<!-- First Vintage Poster Card (Backdrop tilt) -->
+<div class="absolute w-56 sm:w-64 aspect-[2/3] rounded-lg overflow-hidden shadow-2xl -rotate-6 -translate-x-10 translate-y-4 bg-surface-container-high transition-transform duration-500 hover:rotate-0 hover:z-20 hover:scale-105">
+<img alt="Surya Jyoti 1974 Archival Poster" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp9WhYc7ImxetcwFhen-T-Yx1EzB-zPUG3jv93mENqoTxMrpjUMpjWSQym5CZmQEXuYHfVkHPg76v5NUyZkW67yBrCMOfvBVRyTTDohabg7hpPPsm1yKE5D4DiqzQpz3ffcLtSBBjtHnMZ0sllHlQjcIcbOi-8Kf8aDkIZmWNDIKDxIvYH6M46Nd3AEw_BJq-dz0gyivYQ5QhBGq5HARxU1l4KEriIlmWJm94lew6bhUvB4nSNv0SpCg"/>
+<div class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-surface-container-lowest to-transparent">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Surya Jyoti • 1974</span>
+</div>
+</div>
+<!-- Second Vintage Poster Card (Front overlap) -->
+<div class="relative w-60 sm:w-72 aspect-[2/3] rounded-lg overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.8)] rotate-3 translate-x-8 -translate-y-2 bg-surface-container-high transition-transform duration-500 hover:rotate-0 hover:z-20 hover:scale-105">
+<img alt="Kaalchakra 1994 Archival Poster" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzXv1iQRf966fr53RuKzOhKqa8fNFdwQRqbMQ4qSEoYk37SHXv8IBA9BazlBwfG8WPcgzH6RWITwnfIFUTPS2E6nNRqko1v2sty6pEtWzWKM-hDQCqZQlFsAaVAd3pLsrlYnozZND1oBa3JONdiwtlDSK7KBMUylufv213LbN4QxA3t-dsnxZ8pWaorAemWubQufJ9B_8Ik3_4bzyuDpgTe2XQSFC0No8OC7Cw-2DdQwooyqgS20QL5Q"/>
+<div class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-surface-container-lowest to-transparent flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Kaalchakra • 1994</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">National Laureate</span>
+</div>
+</div>
+<!-- Archival Stamp Overlay Badge -->
+<div class="absolute bottom-2 left-6 z-30 bg-surface-container-lowest/90 backdrop-blur-md px-space-md py-space-xs rounded-sm shadow-xl flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Restored in 4K Dolby Vision</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: THE DIRECTOR - THIRD GENERATION HELM -->
+<section class="w-full py-28 px-gutter lg:px-margin bg-surface-container-low relative">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Director Portrait Frame -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-lg overflow-hidden bg-surface-container-high aspect-[3/4] shadow-[0_16px_40px_rgba(0,0,0,0.7)] group">
+<img alt="Aryan Marathe Director Portrait" class="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs0mnzbgpGzMw7XFuaE8MSKCjl0MKGVSVa0gN77EhZBEGbpdYtc13xl3nfSMSJwJ1NqYIqVa-h8xkcQ2i82JJMedpxXSOYV71NEsYsUoP0ssVLHZ0qbsPoBPVO0ItnsDTf5jwb09L39gjSGJfwkZS56HMDbJH3EO9tGoGGowFv0nNKs0ERmN2tp9hVuQjoj-tCLH75pzHu7Wtp4WjQIUYFtSoOy80-aP24cZHik6LhkXQTYII6k5BfoA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-80"></div>
+<!-- Clapperboard / Metadata Badge inside card -->
+<div class="absolute bottom-4 left-4 right-4 p-space-md bg-surface-container-lowest/90 backdrop-blur-md rounded-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-serif">Aryan Marathe</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Writer &amp; Director • 3rd Generation</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">FTII Pune &amp; USC</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Director's Chair</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Director Profile Editorial -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-px bg-primary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary">The Third Generation Takes The Helm</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-serif">
+            Rooted in Legacy. Driven by Modern Cinematic Scale.
+          </h2>
+</div>
+<!-- Pull Quote -->
+<blockquote class="font-display-md text-display-md text-primary font-serif italic leading-tight pl-space-md relative">
+<span class="absolute left-0 top-0 bottom-0 w-1 bg-primary rounded-full"></span>
+          "Cinema is not merely the images we cast upon silver linen; it is the pulse of memory passed down through blood and craft."
+        </blockquote>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          Trained under veteran masters at the Film and Television Institute of India (FTII) and USC's School of Cinematic Arts, Aryan Marathe served twelve rigorous years across production design, screenwriting, and second-unit direction. With <strong class="text-on-surface">DHANANJAY</strong>, Aryan brings an unapologetically grand, grounded historical epic that honours the visual language established by his grandfather Anand Rao in 1974.
+        </p>
+<!-- Film Production Specifications Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">videocam</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Cinematographer</span>
+<span class="font-title-md text-title-md text-on-surface">Greig Fraser, ASC, ACS</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">music_note</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Original Musical Score</span>
+<span class="font-title-md text-title-md text-on-surface">Amit Trivedi &amp; AR Rahman</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">architecture</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Production Design</span>
+<span class="font-title-md text-title-md text-on-surface">Nitin Desai Studios</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">camera_outdoor</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Filming Locations</span>
+<span class="font-title-md text-title-md text-on-surface">Jaisalmer, Leh &amp; Film City</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: ICONIC FILMOGRAPHY (INTERACTIVE POSTER GRID) -->
+<section class="w-full py-28 px-gutter lg:px-margin bg-surface relative" id="filmographySection">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Section Header & Filter Tabs -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary">Archival Collection</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-serif">Milestones That Defined Indian Storytelling</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Explore pivotal theatrical landmarks preserved across five decades of pioneering cinema.
+          </p>
+</div>
+<!-- Filter Pills -->
+<div class="flex flex-wrap items-center gap-space-xs p-1 bg-surface-container-high rounded-lg">
+<button class="film-tab-btn active px-space-md py-1.5 rounded-sm font-label-sm text-label-sm uppercase tracking-wider transition-all bg-primary text-on-primary font-semibold" data-filter="all" type="button">All Eras</button>
+<button class="film-tab-btn px-space-md py-1.5 rounded-sm font-label-sm text-label-sm uppercase tracking-wider transition-all text-on-surface-variant hover:text-on-surface" data-filter="golden" type="button">1970s–1980s</button>
+<button class="film-tab-btn px-space-md py-1.5 rounded-sm font-label-sm text-label-sm uppercase tracking-wider transition-all text-on-surface-variant hover:text-on-surface" data-filter="neorealist" type="button">1990s–2000s</button>
+<button class="film-tab-btn px-space-md py-1.5 rounded-sm font-label-sm text-label-sm uppercase tracking-wider transition-all text-on-surface-variant hover:text-on-surface" data-filter="modern" type="button">Modern Epics</button>
+</div>
+</div>
+<!-- 4-Card Film Grid (Strict 2:3 Theatrical Aspect Ratio) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg" id="filmCardsGrid">
+<!-- Film Card 1: Dhananjay (Modern) -->
+<div class="film-card group relative flex flex-col rounded-lg overflow-hidden bg-surface-container transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_16px_36px_-8px_rgba(201,162,75,0.22)]" data-era="modern">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-low">
+<img alt="Dhananjay 2026 Film Poster" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtvSYxQvmSO5VqeRJ-hFGgnGaU1X1VUmsvlsQTebq05yw-KKtYp9iUr36iSjWMbefpsCkJcTXheyPqFcjN7mJWj1BIE5pNu8qa3K4XSrR4HZuQzHPQiyAI6ARafQaxGdefNuTilli37XqrVdusFWPhN49AR4lKXaHsAwAVPkMmkPdPrll1yv9k9ufGT0HgHfTuTO8ns0HgsXs5bGo33VnaqjGKyGEhp99QoI1zaDKaRHSoJo77pfGAqw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/30 to-transparent"></div>
+<span class="absolute top-3 right-3 px-space-xs py-0.5 rounded-sm bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">2026</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Period Epic • Magnum Opus</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">Dhananjay: The Heir</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+              The grand multi-generational chronicle of an imperial dynasty caught between an unrelenting enemy and the heir's unyielding vow.
+            </p>
+<div class="pt-space-sm flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm">ARRI Alexa 65</span>
+<button class="text-primary hover:text-tertiary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-0.5" onclick="showFilmDetails('Dhananjay: The Heir', '2026', 'Aryan Marathe', 'Greig Fraser, ASC', 'Amit Trivedi', 'Vikramaditya Deshmukh, Radhika Apte, Naseeruddin Shah', 'A sprawling historical chronicle tracing three royal generations, set during the fierce geopolitical shifts of medieval India. Filmed entirely on location in Rajasthan and Ladakh across 140 days.')" type="button">
+<span>Details</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Film Card 2: Surya Jyoti (Golden Era) -->
+<div class="film-card group relative flex flex-col rounded-lg overflow-hidden bg-surface-container transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_16px_36px_-8px_rgba(201,162,75,0.22)]" data-era="golden">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-low">
+<img alt="Surya Jyoti 1974 Vintage Classic Poster" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp9WhYc7ImxetcwFhen-T-Yx1EzB-zPUG3jv93mENqoTxMrpjUMpjWSQym5CZmQEXuYHfVkHPg76v5NUyZkW67yBrCMOfvBVRyTTDohabg7hpPPsm1yKE5D4DiqzQpz3ffcLtSBBjtHnMZ0sllHlQjcIcbOi-8Kf8aDkIZmWNDIKDxIvYH6M46Nd3AEw_BJq-dz0gyivYQ5QhBGq5HARxU1l4KEriIlmWJm94lew6bhUvB4nSNv0SpCg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/30 to-transparent"></div>
+<span class="absolute top-3 right-3 px-space-xs py-0.5 rounded-sm bg-surface-container-high text-tertiary font-label-sm text-label-sm uppercase tracking-wider">1974</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Romance • Classical Drama</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">Surya Jyoti</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+              The historic romance that inaugurated Marathe Motion Pictures, celebrated for its legendary score by R.D. Burman and record 75-week theatrical run.
+            </p>
+<div class="pt-space-sm flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm">35mm Eastman</span>
+<button class="text-primary hover:text-tertiary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-0.5" onclick="showFilmDetails('Surya Jyoti', '1974', 'Ravi Sharma &amp; Anand Rao Marathe', 'K. Vaikunth', 'R.D. Burman', 'Rajesh Khanna, Sharmila Tagore, Pran, Ashok Kumar', 'The golden jubilee masterpiece that anchored Marathe Motion Pictures as a household name in Indian cinema. Restored from original camera negatives by the National Film Archive of India in 2023.')" type="button">
+<span>Details</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Film Card 3: Kaalchakra (Neorealist) -->
+<div class="film-card group relative flex flex-col rounded-lg overflow-hidden bg-surface-container transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_16px_36px_-8px_rgba(201,162,75,0.22)]" data-era="neorealist">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-low">
+<img alt="Kaalchakra 1994 Film Poster" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzXv1iQRf966fr53RuKzOhKqa8fNFdwQRqbMQ4qSEoYk37SHXv8IBA9BazlBwfG8WPcgzH6RWITwnfIFUTPS2E6nNRqko1v2sty6pEtWzWKM-hDQCqZQlFsAaVAd3pLsrlYnozZND1oBa3JONdiwtlDSK7KBMUylufv213LbN4QxA3t-dsnxZ8pWaorAemWubQufJ9B_8Ik3_4bzyuDpgTe2XQSFC0No8OC7Cw-2DdQwooyqgS20QL5Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/30 to-transparent"></div>
+<span class="absolute top-3 right-3 px-space-xs py-0.5 rounded-sm bg-surface-container-high text-tertiary font-label-sm text-label-sm uppercase tracking-wider">1994</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Social Neo-Noir • Drama</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">Kaalchakra</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+              National Award winner for Best Screenplay and Cinematography. A haunting exploration of moral ambiguity during Bombay's monsoon twilight.
+            </p>
+<div class="pt-space-sm flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm">4 National Awards</span>
+<button class="text-primary hover:text-tertiary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-0.5" onclick="showFilmDetails('Kaalchakra', '1994', 'Bimal Roy &amp; Devraj Marathe', 'Subrata Mitra', 'Shiv-Hari', 'Irrfan Khan, Tabu, Om Puri', 'A critically lionized neo-noir drama exploring ethical fragmentation in an evolving metropolis. Premiered at Venice and Karlovy Vary before securing 4 National Film Awards.')" type="button">
+<span>Details</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Film Card 4: Epic Saga Triptych (Modern / Historical) -->
+<div class="film-card group relative flex flex-col rounded-lg overflow-hidden bg-surface-container transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_16px_36px_-8px_rgba(201,162,75,0.22)]" data-era="modern">
+<div class="relative w-full aspect-[2/3] overflow-hidden bg-surface-container-low">
+<img alt="Epic Saga Theatrical Frame" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCktPb2eQrnKiLFOEcQlr0MW9XenFBj3fVXc2djmQdPTrKRYN7IWeBnPE51zp6wwIhdheWjcxVV4qol51zhuqgGT6o3ZiMH0JcJgsy9DtuvdnWXYDumy_1uuSxs426NMQtHsRkcsBHE7klMnqQ4USBUyxcBS7VOBWUP50HOfFOPJ3ZKje33dwqpoIJdTjzWwf8oG0SYakJwYLV73_tJMd6sEgCeLWQc02fyVGbBj3loUWki1A9Gn72V5w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/30 to-transparent"></div>
+<span class="absolute top-3 right-3 px-space-xs py-0.5 rounded-sm bg-surface-container-high text-tertiary font-label-sm text-label-sm uppercase tracking-wider">2018</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Historical Warfare • Panorama</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-serif">Simhasan: The Throne</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+              Pan-Indian box office record holder depicting the defense of fortresses along the Sahyadri mountains with practical in-camera battlefield choreography.
+            </p>
+<div class="pt-space-sm flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm">₹380 Cr Worldwide</span>
+<button class="text-primary hover:text-tertiary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-0.5" onclick="showFilmDetails('Simhasan: The Throne', '2018', 'Devraj Marathe', 'Santosh Sivan', 'Shankar-Ehsaan-Loy', 'Ajay Devgn, Atul Kulkarni, Sai Tamhankar', 'A staggering showcase of 17th-century mountain warfare, celebrated for zero green-screen fortress sets reconstructed across 80 acres in Maharashtra.')" type="button">
+<span>Details</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: 50-YEAR SHOWREEL & CINEMA FACILITIES -->
+<section class="w-full py-28 px-gutter lg:px-margin bg-surface-container-lowest relative overflow-hidden">
+<div class="max-w-6xl mx-auto flex flex-col gap-space-xl">
+<!-- Heading & Facility Narrative -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary">The Vault &amp; Soundstages</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-serif">50-Year Heritage Showreel &amp; Studio Infrastructure</h2>
+</div>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md tracking-widest uppercase">
+<span class="material-symbols-outlined text-[16px]">hd</span>
+<span>4K Archival Resolution Preview</span>
+</div>
+</div>
+<!-- Mock 16:9 Theatrical Player Frame -->
+<div class="relative w-full aspect-video rounded-lg overflow-hidden bg-surface-container-low shadow-[0_20px_60px_rgba(0,0,0,0.85)] group">
+<img alt="Epic Showreel Frame" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCktPb2eQrnKiLFOEcQlr0MW9XenFBj3fVXc2djmQdPTrKRYN7IWeBnPE51zp6wwIhdheWjcxVV4qol51zhuqgGT6o3ZiMH0JcJgsy9DtuvdnWXYDumy_1uuSxs426NMQtHsRkcsBHE7klMnqQ4USBUyxcBS7VOBWUP50HOfFOPJ3ZKje33dwqpoIJdTjzWwf8oG0SYakJwYLV73_tJMd6sEgCeLWQc02fyVGbBj3loUWki1A9Gn72V5w"/>
+<!-- Subtle Top & Bottom Cinematic Vignette -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-surface-container-lowest/40 pointer-events-none"></div>
+<!-- Big Center Play Button Overlay -->
+<button class="absolute inset-0 m-auto w-20 h-20 rounded-full bg-primary/90 text-on-primary flex items-center justify-center hover:scale-110 hover:bg-tertiary transition-all duration-300 shadow-[0_0_35px_rgba(201,162,75,0.5)]" id="playShowreelBtn" type="button">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<!-- Player Controls Bar -->
+<div class="absolute bottom-0 inset-x-0 p-space-md bg-surface-container-lowest/90 backdrop-blur-md flex flex-col gap-space-xs">
+<!-- Timeline scrubber bar -->
+<div class="w-full h-1 bg-outline-variant/40 rounded-full overflow-hidden relative cursor-pointer group/bar">
+<div class="h-full bg-primary w-2/5 transition-all" id="showreelScrubber"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-primary">play_circle</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Marathe Golden Reel • 1974–2024 Retrospective</span>
+<span class="font-label-sm text-label-sm text-outline">[03:42]</span>
+</div>
+<!-- Custom Waveform SVG Graphic -->
+<div class="hidden sm:flex items-center gap-1 h-4">
+<span class="w-0.5 h-3 bg-primary animate-pulse"></span>
+<span class="w-0.5 h-4 bg-primary animate-pulse delay-75"></span>
+<span class="w-0.5 h-2 bg-primary"></span>
+<span class="w-0.5 h-3.5 bg-primary animate-pulse delay-100"></span>
+<span class="w-0.5 h-1 bg-outline"></span>
+<span class="w-0.5 h-4 bg-primary animate-pulse delay-150"></span>
+<span class="w-0.5 h-2.5 bg-primary"></span>
+</div>
+<div class="flex items-center gap-space-md text-outline">
+<span class="font-label-sm text-label-sm tracking-wider uppercase">Stereo 48kHz</span>
+<span class="material-symbols-outlined text-[18px] hover:text-primary cursor-pointer">fullscreen</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Studio Capabilities Triad -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg pt-space-xs">
+<div class="p-space-lg rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[28px]">movie_edit</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-serif">Dolby Vision 4K Restoration</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Equipped with proprietary DFT Scanity scanners and daVinci Resolve colour suites dedicated to preserving fragile photochemical nitrate and acetate negatives.
+          </p>
+</div>
+<div class="p-space-lg rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[28px]">surround_sound</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-serif">Atmos Soundstage 03</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            A 24,000 sq ft acoustic isolation stage inside Mumbai Film City engineered for symphonic scoring sessions and full IMAX theatrical Foley mixing.
+          </p>
+</div>
+<div class="p-space-lg rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[28px]">language</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-serif">Global Co-Financing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Structured international distribution channels spanning North America, the UK, Europe, Japan, and the Middle East for multi-territory theatrical syndication.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: CRITICAL PRESS & GUILD ACCREDITATIONS -->
+<section class="w-full py-20 px-gutter lg:px-margin bg-surface-container-high/60 relative overflow-hidden">
+<div class="max-w-6xl mx-auto flex flex-col gap-space-lg text-center">
+<div class="flex items-center justify-center gap-space-xs">
+<span class="w-12 h-px bg-primary/40"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-primary">Global Critical Acclaim</span>
+<span class="w-12 h-px bg-primary/40"></span>
+</div>
+<!-- Critical Quotes Carousel / Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg text-left">
+<div class="bg-surface-container p-space-lg rounded-lg flex flex-col justify-between gap-space-md shadow-sm">
+<p class="font-body-lg text-body-lg text-on-surface font-serif italic">
+            "One of the most anticipated cinematic spectacles in modern Asian cinema. Aryan Marathe's vision bridges raw tactile history with grand IMAX scope."
+          </p>
+<div class="flex items-center justify-between pt-space-xs border-t border-outline-variant/30">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Variety</span>
+<span class="font-label-sm text-label-sm text-outline">Film Market Preview</span>
+</div>
+</div>
+<div class="bg-surface-container p-space-lg rounded-lg flex flex-col justify-between gap-space-md shadow-sm">
+<p class="font-body-lg text-body-lg text-on-surface font-serif italic">
+            "Marathe Motion Pictures continues its 50-year legacy of celluloid discipline. Dhananjay feels crafted by a master filmmaker who lives and breathes cinema."
+          </p>
+<div class="flex items-center justify-between pt-space-xs border-t border-outline-variant/30">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">The Hollywood Reporter</span>
+<span class="font-label-sm text-label-sm text-outline">Festival Edition</span>
+</div>
+</div>
+<div class="bg-surface-container p-space-lg rounded-lg flex flex-col justify-between gap-space-md shadow-sm">
+<p class="font-body-lg text-body-lg text-on-surface font-serif italic">
+            "A seamless marriage between timeless Indian emotional weight and 65mm cutting-edge visual grammar. The teaser promises a genuine cinematic milestone."
+          </p>
+<div class="flex items-center justify-between pt-space-xs border-t border-outline-variant/30">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Film Companion</span>
+<span class="font-label-sm text-label-sm text-outline">First Look Review</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 8: PRIVATE SCREENINGS & STUDIO CONTACT -->
+<section class="w-full py-28 px-gutter lg:px-margin bg-surface relative">
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Studio Liaison Addresses -->
+<div class="lg:col-span-5 flex flex-col justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary">Private Inquiries &amp; Screenings</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-serif">Studio Offices &amp; Archival Access</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Guild accreditations, festival selectors, and theatrical syndication inquiries are handled through our studio liaisons in Mumbai and London.
+          </p>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">location_on</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Mumbai Studio &amp; Soundstages</span>
+<span class="font-body-md text-body-md text-outline">Stage 4B, Film City Road, Goregaon East, Mumbai 400065</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">business</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">London Archival Suite</span>
+<span class="font-body-md text-body-md text-outline">14 Soho Square, London W1D 3QG, United Kingdom</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">mail</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Press &amp; Screener Requests</span>
+<span class="font-body-md text-body-md text-secondary">screenings@marathemotionpictures.in</span>
+</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container rounded-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Notice for Festival Programmers</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Private 4K screener access keys for Venice, Cannes, and TIFF selectors are issued strictly upon verified guild credential clearance.
+          </p>
+</div>
+</div>
+<!-- Interactive Inquiry Form -->
+<div class="lg:col-span-7 bg-surface-container-high p-space-xl rounded-lg shadow-[0_16px_40px_rgba(0,0,0,0.5)]">
+<form class="flex flex-col gap-space-md" id="screenerInquiryForm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-serif">Screening &amp; Syndicate Liaison Form</span>
+<span class="font-body-md text-body-md text-outline">Complete the fields below to request theatrical credentials or archival print bookings.</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Full Name</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm rounded-sm text-on-surface placeholder:text-outline-variant font-body-md focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="e.g. Vikramaditya Roy" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Organization / Guild / Festival</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm rounded-sm text-on-surface placeholder:text-outline-variant font-body-md focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="e.g. FIPRESCI / Venice Film Festival" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Official Email Address</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm rounded-sm text-on-surface placeholder:text-outline-variant font-body-md focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="liaison@festival.org" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">City &amp; Country</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm rounded-sm text-on-surface placeholder:text-outline-variant font-body-md focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="Mumbai / London / Los Angeles" required="" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Nature of Request</label>
+<select class="w-full bg-surface-container-low px-space-md py-space-sm rounded-sm text-on-surface font-body-md focus:outline-none focus:ring-1 focus:ring-primary transition-all">
+<option value="dhananjay_screener">Dhananjay: The Heir — Theatrical Syndication &amp; Screener</option>
+<option value="retrospective">50-Year Golden Jubilee Retrospective Programming</option>
+<option value="archival_print">Photochemical 35mm Print Rental &amp; Preservation Stills</option>
+<option value="press_interview">Director Aryan Marathe — Press Availability</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Executive Note</label>
+<textarea class="w-full bg-surface-container-low p-space-md rounded-sm text-on-surface placeholder:text-outline-variant font-body-md focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="Detail screening dates, territory scope, or specific technical requirements (DCP / 35mm / Dolby Cinema)..." rows="4"></textarea>
+</div>
+<button class="w-full py-space-sm bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider rounded-sm shadow-md hover:bg-tertiary transition-all duration-300 flex items-center justify-center gap-space-sm" type="submit">
+<span>Transmit Official Dispatch</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+<p class="hidden text-center font-label-sm text-label-sm uppercase tracking-widest text-primary py-2" id="inquirySuccessMsg">
+            Dispatch logged with Studio Registry. An archival liaison will respond within 24 hours.
+          </p>
+</form>
+</div>
+</div>
+</section>
+<!-- TEASER MODAL PLAYER (Interactive) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-surface-container-lowest/95 backdrop-blur-2xl p-4 sm:p-8 opacity-0 pointer-events-none transition-all duration-300" id="teaserModal">
+<div class="relative w-full max-w-5xl bg-surface-container-low rounded-lg overflow-hidden shadow-[0_25px_80px_rgba(0,0,0,0.9)] flex flex-col">
+<!-- Modal Header -->
+<div class="px-space-md py-space-sm bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface">Dhananjay: The Heir • 65mm Official Teaser</span>
+</div>
+<button class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center p-1" id="closeTeaserModalBtn" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Modal Cinema Viewport -->
+<div class="relative w-full aspect-[21/9] sm:aspect-video bg-surface-container-lowest overflow-hidden flex items-center justify-center">
+<img alt="Dhananjay Cinematic Teaser Frame" class="w-full h-full object-cover scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUoTv4wMp-FcG_I8kFZBBlbUArNG3tmizCW9JBd4ek9ndfZe0toWTAiHF_M1kZGuLFNwQpZ4yKQF6Ac7OhAFIiLQdxizEeWTaqd_XesKa253bcZ4Yz46hlK5wy8GzctSV362uTiWQyZETv-bb5yMsfp448szpBGQmcgoKRSX6yRiayNSWbhMJCFKEQwdpNhhIrgi2axxynxzsm-vzf6Ed1Lob9TO93ixEkq4ys3IG2We9syQmCBsijsQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-70"></div>
+<!-- Live Playback Simulation -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-space-md">
+<div class="w-16 h-16 rounded-full bg-primary/90 text-on-primary flex items-center justify-center shadow-[0_0_30px_rgba(201,162,75,0.6)] mb-space-sm">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+<span class="font-display-md text-display-md text-primary font-serif font-bold">DHANANJAY</span>
+<span class="font-label-sm text-label-sm text-on-surface tracking-widest uppercase mt-1">Teaser Preview Stream • 4K UHD Atmos</span>
+</div>
+</div>
+<!-- Modal Footer Info -->
+<div class="p-space-md bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<span class="font-body-md text-body-md text-on-surface-variant">Theatrical run commences Diwali 2026. Global rights reserved by Marathe Motion Pictures.</span>
+<button class="px-space-md py-1 bg-surface-container-high text-primary hover:bg-surface-container-highest font-label-sm text-label-sm uppercase tracking-wider rounded-sm transition-colors" onclick="document.getElementById('screenerInquiryForm').scrollIntoView({behavior:'smooth'}); document.getElementById('closeTeaserModalBtn').click();" type="button">
+          Request Screening Pass
+        </button>
+</div>
+</div>
+</div>
+<!-- FILM PROFILE DETAIL DRAWER / MODAL -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-surface-container-lowest/90 backdrop-blur-xl p-4 opacity-0 pointer-events-none transition-all duration-300" id="filmModal">
+<div class="relative w-full max-w-2xl bg-surface-container-high rounded-lg overflow-hidden shadow-2xl p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/30">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary" id="filmModalYear"></span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-serif" id="filmModalTitle"></h3>
+</div>
+<button class="text-on-surface-variant hover:text-primary transition-colors p-1" id="closeFilmModalBtn" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="grid grid-cols-2 gap-space-sm text-body-md text-on-surface-variant">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Directed by</span>
+<span class="text-on-surface font-medium" id="filmModalDirector"></span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Cinematography</span>
+<span class="text-on-surface font-medium" id="filmModalDOP"></span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Music</span>
+<span class="text-on-surface font-medium" id="filmModalMusic"></span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block">Key Cast</span>
+<span class="text-on-surface font-medium" id="filmModalCast"></span>
+</div>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed pt-space-xs" id="filmModalSynopsis"></p>
+<div class="flex justify-end pt-space-xs">
+<button class="px-space-lg py-1.5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider rounded-sm" onclick="document.getElementById('closeFilmModalBtn').click()" type="button">
+          Close Archival Entry
+        </button>
+</div>
+</div>
+</div>
+<!-- CLIENT-SIDE BEHAVIOR SCRIPTS -->
+<script>
+    (function initCinemaExperience() {
+      // 1. LIVE COUNTDOWN TIMER TO NOV 27, 2026
+      const targetDate = new Date('2026-11-27T00:00:00+05:30').getTime();
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const diff = targetDate - now;
+
+        if (diff > 0) {
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+          const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+          const daysEl = document.getElementById('countdownDays');
+          const hoursEl = document.getElementById('countdownHours');
+          const minsEl = document.getElementById('countdownMins');
+          const secsEl = document.getElementById('countdownSecs');
+
+          if (daysEl) daysEl.textContent = String(days).padStart(2, '0');
+          if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
+          if (minsEl) minsEl.textContent = String(mins).padStart(2, '0');
+          if (secsEl) secsEl.textContent = String(secs).padStart(2, '0');
+        }
+      }
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+
+      // 2. CALENDAR SYNC TOGGLE
+      const calendarBtn = document.getElementById('calendarBtn');
+      const calendarStatusText = document.getElementById('calendarStatusText');
+      if (calendarBtn && calendarStatusText) {
+        calendarBtn.addEventListener('click', function() {
+          calendarStatusText.textContent = "Premiere Added to Calendar!";
+          calendarBtn.classList.remove('bg-surface-container-highest');
+          calendarBtn.classList.add('bg-primary', 'text-on-primary');
+          setTimeout(() => {
+            calendarStatusText.textContent = "Sync to Calendar";
+            calendarBtn.classList.remove('bg-primary', 'text-on-primary');
+            calendarBtn.classList.add('bg-surface-container-highest');
+          }, 3500);
+        });
+      }
+
+      // 3. TEASER VIDEO MODAL TRIGGER
+      const openModalBtn = document.getElementById('openTeaserModalBtn');
+      const closeModalBtn = document.getElementById('closeTeaserModalBtn');
+      const teaserModal = document.getElementById('teaserModal');
+
+      function openModal() {
+        if (!teaserModal) return;
+        teaserModal.classList.remove('opacity-0', 'pointer-events-none');
+        teaserModal.classList.add('opacity-100', 'pointer-events-auto');
+      }
+
+      function closeModal() {
+        if (!teaserModal) return;
+        teaserModal.classList.remove('opacity-100', 'pointer-events-auto');
+        teaserModal.classList.add('opacity-0', 'pointer-events-none');
+      }
+
+      if (openModalBtn) openModalBtn.addEventListener('click', openModal);
+      if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+      if (teaserModal) {
+        teaserModal.addEventListener('click', function(e) {
+          if (e.target === teaserModal) closeModal();
+        });
+      }
+
+      // Also attach showreel play button to teaser modal
+      const playShowreelBtn = document.getElementById('playShowreelBtn');
+      if (playShowreelBtn) {
+        playShowreelBtn.addEventListener('click', openModal);
+      }
+
+      // 4. FILMOGRAPHY FILTER TABS
+      const filterButtons = document.querySelectorAll('.film-tab-btn');
+      const filmCards = document.querySelectorAll('.film-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+
+          filterButtons.forEach(b => {
+            b.classList.remove('active', 'bg-primary', 'text-on-primary', 'font-semibold');
+            b.classList.add('text-on-surface-variant');
+          });
+
+          btn.classList.add('active', 'bg-primary', 'text-on-primary', 'font-semibold');
+          btn.classList.remove('text-on-surface-variant');
+
+          filmCards.forEach(card => {
+            const era = card.getAttribute('data-era');
+            if (filter === 'all' || filter === era) {
+              card.style.display = 'flex';
+              card.style.opacity = '1';
+            } else {
+              card.style.display = 'none';
+              card.style.opacity = '0';
+            }
+          });
+        });
+      });
+
+      // 5. INQUIRY FORM INTERACTION
+      const inquiryForm = document.getElementById('screenerInquiryForm');
+      const inquirySuccessMsg = document.getElementById('inquirySuccessMsg');
+      if (inquiryForm && inquirySuccessMsg) {
+        inquiryForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          inquirySuccessMsg.classList.remove('hidden');
+          inquiryForm.reset();
+          setTimeout(() => {
+            inquirySuccessMsg.classList.add('hidden');
+          }, 6000);
+        });
+      }
+    })();
+
+    // 6. GLOBAL FILM DETAIL MODAL FUNCTION
+    window.showFilmDetails = function(title, year, director, dop, music, cast, synopsis) {
+      const modal = document.getElementById('filmModal');
+      document.getElementById('filmModalTitle').textContent = title;
+      document.getElementById('filmModalYear').textContent = "Archival Registry • " + year;
+      document.getElementById('filmModalDirector').textContent = director;
+      document.getElementById('filmModalDOP').textContent = dop;
+      document.getElementById('filmModalMusic').textContent = music;
+      document.getElementById('filmModalCast').textContent = cast;
+      document.getElementById('filmModalSynopsis').textContent = synopsis;
+
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.classList.add('opacity-100', 'pointer-events-auto');
+    };
+
+    const closeFilmModalBtn = document.getElementById('closeFilmModalBtn');
+    const filmModal = document.getElementById('filmModal');
+    if (closeFilmModalBtn && filmModal) {
+      closeFilmModalBtn.addEventListener('click', () => {
+        filmModal.classList.remove('opacity-100', 'pointer-events-auto');
+        filmModal.classList.add('opacity-0', 'pointer-events-none');
+      });
+      filmModal.addEventListener('click', (e) => {
+        if (e.target === filmModal) {
+          filmModal.classList.remove('opacity-100', 'pointer-events-auto');
+          filmModal.classList.add('opacity-0', 'pointer-events-none');
+        }
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-primary/15 relative overflow-hidden"><div class="w-full px-gutter lg:px-margin py-space-xl flex flex-col gap-space-xl"><div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg pb-space-lg border-b border-outline-variant/30"><div class="flex flex-col gap-space-xs"><span class="font-headline-md text-headline-md text-on-surface tracking-wide uppercase">Marathe Motion Pictures</span><p class="font-body-md text-body-md text-on-surface-variant max-w-lg">Archiving five decades of visionary storytelling, cinematic masterworks, and pioneering Indian cinema on global celluloid.</p></div><div class="flex items-center gap-space-lg text-center"><div class="flex flex-col"><span class="font-display-md text-display-md text-primary font-serif">50</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Golden Years</span></div><div class="h-10 w-[1px] bg-outline-variant/50"></div><div class="flex flex-col"><span class="font-display-md text-display-md text-primary font-serif">120+</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">National Laurels</span></div></div></div><div class="grid grid-cols-2 md:grid-cols-4 gap-space-lg"><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-widest text-primary">Archival Catalog</span><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li class="hover:text-primary transition-colors cursor-pointer">The Golden Decades (1974-1994)</li><li class="hover:text-primary transition-colors cursor-pointer">Celluloid Restorations</li><li class="hover:text-primary transition-colors cursor-pointer">Festival Retrospectives</li><li class="hover:text-primary transition-colors cursor-pointer">Original Soundtracks</li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-widest text-primary">Studios &amp; Presence</span><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li class="flex items-center gap-space-xs"><span class="text-primary text-[10px]">●</span> Mumbai: Film City Soundstages</li><li class="flex items-center gap-space-xs"><span class="text-primary text-[10px]">●</span> London: Soho Archival Suite</li><li class="flex items-center gap-space-xs"><span class="text-primary text-[10px]">●</span> Los Angeles: Post-Production Lab</li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-widest text-primary">Press &amp; Guilds</span><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li class="hover:text-primary transition-colors cursor-pointer">Screening Invitations</li><li class="hover:text-primary transition-colors cursor-pointer">Film Guild Accreditations</li><li class="hover:text-primary transition-colors cursor-pointer">Press Kits &amp; Stills</li><li class="hover:text-primary transition-colors cursor-pointer">Archival Requests</li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-widest text-primary">Private Inquiries</span><p class="font-body-md text-body-md text-on-surface-variant">Private screenings and theatrical syndication requests managed exclusively via studio liaison.</p><span class="font-label-md text-label-md text-secondary tracking-wider uppercase mt-1">liaison@marathemotionpictures.in</span></div></div><div class="pt-space-md border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-space-sm text-outline"><span class="font-label-sm text-label-sm tracking-wider uppercase">© 1974–2026 Marathe Motion Pictures. All Archival Rights Reserved.</span><div class="flex items-center gap-space-md font-label-sm text-label-sm tracking-widest uppercase"><span class="hover:text-on-surface cursor-pointer">Privacy Policy</span><span class="hover:text-on-surface cursor-pointer">Celluloid Terms</span><span class="hover:text-on-surface cursor-pointer">Guild Notice</span></div></div></div></footer></body></html>
